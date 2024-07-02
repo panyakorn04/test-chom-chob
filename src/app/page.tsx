@@ -1,4 +1,6 @@
 "use client";
+import { Suspense } from "react";
+
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { getPokemon } from "@/api";
 import { Button } from "@/components/ui/button";
