@@ -24,12 +24,6 @@ jobs:
                 echo "VERCEL_ORG_ID is set: ${{ secrets.VERCEL_ORG_ID != '' }}"
                 echo "VERCEL_PROJECT_ID is set: ${{ secrets.VERCEL_PROJECT_ID != '' }}"
 
-            - name: Link to Vercel Project
-              run: vercel link --token=${{ secrets.VERCEL_TOKEN }} --yes
-              env:
-                VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-                VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-
             - name: Pull Vercel Environment Information
               run: vercel pull --yes --environment=develop --token=${{ secrets.VERCEL_TOKEN }}
 
