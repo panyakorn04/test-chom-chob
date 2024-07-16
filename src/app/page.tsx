@@ -61,7 +61,7 @@ export default function Home() {
           <ProductsList data={data} isLoading={isLoading} />
         )}
         <div>
-          <Buttons
+          <Button
             variant={"ghost"}
             ref={ref}
             onClick={() => fetchNextPage()}
