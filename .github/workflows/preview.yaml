@@ -25,7 +25,7 @@ jobs:
                 echo "VERCEL_PROJECT_ID is set: ${{ secrets.VERCEL_PROJECT_ID != '' }}"
 
             - name: Link to Vercel Project
-              run: vercel link --token=${{ secrets.VERCEL_TOKEN }} --yes
+              run: vercel --token=${{ secrets.VERCEL_TOKEN }} link
               env:
                 VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
                 VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
