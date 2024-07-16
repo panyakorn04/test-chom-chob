@@ -55,11 +55,11 @@ export default function Home() {
         </div>
       </div>
       <div className="py-10">
-        {/* {tabsState.value === Tabs.grid ? (
+        {tabsState.value === Tabs.grid ? (
           <ProductsGrid data={data} isLoading={isLoading} />
         ) : (
           <ProductsList data={data} isLoading={isLoading} />
-        )} */}
+        )}
         <div>
           <Buttons
             variant={"ghost"}
